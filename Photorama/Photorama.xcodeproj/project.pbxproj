@@ -56,6 +56,8 @@
 		78F6A68F227C88A70078E369 = {
 			isa = PBXGroup;
 			children = (
+				78F6A6C0227CA3460078E369 /* Photo+CoreDataClass.swift */,
+				78F6A6C1227CA3460078E369 /* Photo+CoreDataProperties.swift */,
 				78F6A69A227C88A70078E369 /* Photorama */,
 				78F6A699227C88A70078E369 /* Products */,
 			);
@@ -72,8 +74,6 @@
 		78F6A69A227C88A70078E369 /* Photorama */ = {
 			isa = PBXGroup;
 			children = (
-				78F6A6C0227CA3460078E369 /* Photo+CoreDataClass.swift */,
-				78F6A6C1227CA3460078E369 /* Photo+CoreDataProperties.swift */,
 				78F6A69B227C88A70078E369 /* AppDelegate.swift */,
 				78F6A6AD227C88D90078E369 /* PhotosViewController.swift */,
 				78F6A6BB227C9B810078E369 /* PhotoInfoViewController.swift */,
