@@ -20,7 +20,6 @@
 		78F6A6BC227C9B810078E369 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F6A6BB227C9B810078E369 /* PhotoInfoViewController.swift */; };
 		78F6A6BF227C9F0A0078E369 /* Photorama.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78F6A6BD227C9F0A0078E369 /* Photorama.xcdatamodeld */; };
 		78F6A6C2227CA3460078E369 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F6A6C0227CA3460078E369 /* Photo+CoreDataClass.swift */; };
-		78F6A6C3227CA3460078E369 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F6A6C1227CA3460078E369 /* Photo+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		78F6A6BB227C9B810078E369 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		78F6A6BE227C9F0A0078E369 /* Photorama.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photorama.xcdatamodel; sourceTree = "<group>"; };
 		78F6A6C0227CA3460078E369 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
-		78F6A6C1227CA3460078E369 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				78F6A6C0227CA3460078E369 /* Photo+CoreDataClass.swift */,
-				78F6A6C1227CA3460078E369 /* Photo+CoreDataProperties.swift */,
 				78F6A69A227C88A70078E369 /* Photorama */,
 				78F6A699227C88A70078E369 /* Products */,
 			);
@@ -171,7 +168,6 @@
 				78F6A6B6227C95570078E369 /* PhotoDataSource.swift in Sources */,
 				78F6A6BF227C9F0A0078E369 /* Photorama.xcdatamodeld in Sources */,
 				78F6A6B8227C974C0078E369 /* PhotoCollectionViewCell.swift in Sources */,
-				78F6A6C3227CA3460078E369 /* Photo+CoreDataProperties.swift in Sources */,
 				78F6A69C227C88A70078E369 /* AppDelegate.swift in Sources */,
 				78F6A6BC227C9B810078E369 /* PhotoInfoViewController.swift in Sources */,
 			);
