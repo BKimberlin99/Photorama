@@ -43,7 +43,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tags" id="But-gN-abd">
-                        <barButtonItem key="leftBarButtonItem" title="Item" style="done" id="EWs-lF-n2p">
+                        <barButtonItem key="leftBarButtonItem" title="Done" style="done" id="EWs-lF-n2p">
                             <connections>
                                 <action selector="done:" destination="EJe-fO-coV" id="Xn3-En-fFF"/>
                             </connections>
@@ -54,9 +54,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="done" destination="EWs-lF-n2p" id="6UM-A8-zkO"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ho7-Zj-FHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,7 +160,7 @@
                                 <items>
                                     <barButtonItem title="Tags" id="8AS-Br-4oZ">
                                         <connections>
-                                            <segue destination="SXw-xb-mTd" kind="presentation" identifier="showTags" id="8fl-zS-oZY"/>
+                                            <segue destination="SXw-xb-mTd" kind="presentation" identifier="showTags" id="SKQ-dZ-as8"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>

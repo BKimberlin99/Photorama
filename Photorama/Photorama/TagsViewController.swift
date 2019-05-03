@@ -13,6 +13,8 @@ class TagsViewController: UITableViewController {
     var store: PhotoStore!
     var photo: Photo!
     
+    var selectedIndexPaths = [IndexPath]()
+    
     @IBAction func done(_ sender: UIBarButtonItem){
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
@@ -53,7 +55,7 @@ class TagsViewController: UITableViewController {
     }
     
     
-    var selectedIndexPaths = [IndexPath]()
+//    var selectedIndexPaths = [IndexPath]()
     
     let tagDataSource = TagDataSource()
     
