@@ -14,6 +14,7 @@
 		78F6A6AE227C88D90078E369 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F6A6AD227C88D90078E369 /* PhotosViewController.swift */; };
 		78F6A6B0227C8A050078E369 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F6A6AF227C8A050078E369 /* FlickrAPI.swift */; };
 		78F6A6B2227C8C070078E369 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F6A6B1227C8C070078E369 /* PhotoStore.swift */; };
+		78F6A6B4227C8E100078E369 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F6A6B3227C8E100078E369 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		78F6A6AD227C88D90078E369 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		78F6A6AF227C8A050078E369 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 		78F6A6B1227C8C070078E369 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		78F6A6B3227C8E100078E369 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				78F6A69B227C88A70078E369 /* AppDelegate.swift */,
 				78F6A6AD227C88D90078E369 /* PhotosViewController.swift */,
 				78F6A6AF227C8A050078E369 /* FlickrAPI.swift */,
+				78F6A6B3227C8E100078E369 /* Photo.swift */,
 				78F6A6B1227C8C070078E369 /* PhotoStore.swift */,
 				78F6A69F227C88A70078E369 /* Main.storyboard */,
 				78F6A6A2227C88AB0078E369 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				78F6A6AE227C88D90078E369 /* PhotosViewController.swift in Sources */,
 				78F6A6B2227C8C070078E369 /* PhotoStore.swift in Sources */,
 				78F6A69C227C88A70078E369 /* AppDelegate.swift in Sources */,
+				78F6A6B4227C8E100078E369 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
