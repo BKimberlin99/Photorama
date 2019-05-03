@@ -10,6 +10,74 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Tags-->
+        <scene sceneID="nnL-AN-ScC">
+            <objects>
+                <tableViewController id="EJe-fO-coV" customClass="TagsViewController" customModule="Photorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LKS-gg-kTI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="Bcp-FF-Pzj" style="IBUITableViewCellStyleDefault" id="5fb-SX-KkL">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5fb-SX-KkL" id="5W1-Hv-M3H">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bcp-FF-Pzj">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EJe-fO-coV" id="34e-7j-cea"/>
+                            <outlet property="delegate" destination="EJe-fO-coV" id="F6T-da-6eq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tags" id="But-gN-abd">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="done" id="EWs-lF-n2p">
+                            <connections>
+                                <action selector="done:" destination="EJe-fO-coV" id="Xn3-En-fFF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="D9y-N4-Dru">
+                            <connections>
+                                <action selector="addNewTag:" destination="EJe-fO-coV" id="Dft-9P-dbk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="done" destination="EWs-lF-n2p" id="6UM-A8-zkO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ho7-Zj-FHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3794" y="157"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i8Y-FJ-v36">
+            <objects>
+                <navigationController id="SXw-xb-mTd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UBc-cg-qfw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EJe-fO-coV" kind="relationship" relationship="rootViewController" id="8nR-zZ-b1T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsf-sa-NIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2729" y="133"/>
+        </scene>
         <!--Photorama-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -90,13 +158,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ll-qk-Gok">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLN-cF-2Zb">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Tags" id="8AS-Br-4oZ">
+                                        <connections>
+                                            <segue destination="SXw-xb-mTd" kind="presentation" identifier="showTags" id="8fl-zS-oZY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kLN-cF-2Zb" firstAttribute="centerX" secondItem="2pv-mU-GNp" secondAttribute="centerX" id="NE4-iV-DFz"/>
+                            <constraint firstItem="kLN-cF-2Zb" firstAttribute="bottom" secondItem="k0e-vH-Phn" secondAttribute="bottom" id="PBY-pW-YN8"/>
                             <constraint firstItem="8ll-qk-Gok" firstAttribute="top" secondItem="k0e-vH-Phn" secondAttribute="top" id="PeY-Cj-DoQ"/>
                             <constraint firstItem="k0e-vH-Phn" firstAttribute="bottom" secondItem="8ll-qk-Gok" secondAttribute="bottom" id="S7x-Kv-pGT"/>
                             <constraint firstItem="k0e-vH-Phn" firstAttribute="trailing" secondItem="8ll-qk-Gok" secondAttribute="trailing" id="VYb-Hv-UZI"/>
+                            <constraint firstItem="kLN-cF-2Zb" firstAttribute="leading" secondItem="k0e-vH-Phn" secondAttribute="leading" id="Y46-Wh-NQH"/>
+                            <constraint firstItem="8ll-qk-Gok" firstAttribute="bottom" secondItem="k0e-vH-Phn" secondAttribute="bottom" id="YCN-Ad-fhh"/>
                             <constraint firstItem="8ll-qk-Gok" firstAttribute="leading" secondItem="k0e-vH-Phn" secondAttribute="leading" id="fpq-TC-5hq"/>
+                            <constraint firstItem="kLN-cF-2Zb" firstAttribute="trailing" secondItem="k0e-vH-Phn" secondAttribute="trailing" id="nP4-JB-gHV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k0e-vH-Phn"/>
                     </view>
